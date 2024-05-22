@@ -1,0 +1,591 @@
+
+  
+
+  @media screen and (max-width:600px) {
+
+    .slider{
+        margin:0 auto;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        
+    }
+    
+    .slides{
+        width: 600%;
+        height: 400px;
+        display: flex;
+    
+    }
+    .slides input{
+        display: none;
+    }
+    
+    
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;
+        
+    }
+    
+    
+    .slide img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .manual-navigation{
+        position: absolute;
+        width: 400px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .manual-btn{
+        border:2px solid var(--color-white);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 10px;
+    
+    }
+    
+    .manual-btn:hover{
+        background-color: var(--color-white); 
+    }
+    
+    
+    #radio1:checked ~.first{
+        margin-left: 0;
+        
+    
+    }
+    
+    #radio2:checked ~.first{
+        margin-left: -25%;
+        
+        
+    }
+    #radio3:checked ~.first{
+        margin-left: -50%;
+        
+    }
+    #radio4:checked ~.first{
+        margin-left: -75%;
+        
+        
+    }
+    
+    
+    .navigation-auto div{
+        border: 2px solid var(--primary-color);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: 1s;
+    }
+    
+    .navigation-auto{
+        position: absolute;
+        width: 400px;
+       
+        margin-top: 360px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 10px;
+    
+    }
+    
+    
+    #radio1:checked ~.navigation-auto .auto-btn1{
+        background-color: var(--color-white);
+    
+    }
+    #radio2:checked ~.navigation-auto .auto-btn2{
+        background-color: var(--color-white);
+    
+    }
+    #radio3:checked ~.navigation-auto .auto-btn3{
+        background-color: var(--color-white);
+    
+    }
+    #radio4:checked ~.navigation-auto .auto-btn4{
+        background-color: var(--color-white);
+    
+    }main header p{
+        color: var(--paragraph-color);
+        text-align: justify;
+    
+    }
+    
+    main header{
+        margin: 20px 0;
+    }
+    main header h1{
+        text-align: center;
+    }
+    
+    
+    #section-cakes{
+        overflow: hidden;
+        width: 100%;
+        -webkit-mask:linear-gradient(90deg,transparent,var(--color-white) 10%,var(--color-white) 90%,transparent) ;
+      }
+      #section-cakes #container-cards{
+          
+          display:flex;
+          flex-flow: row nowrap;
+          gap: 20px;
+          animation: scroll-card 20s linear infinite;
+      
+      }
+      @keyframes scroll-card{
+          to {
+              transform: translate(-100%)
+          }
+      }
+      
+      #section-cakes #container-cards a {
+        text-decoration: none;
+        
+      }
+      
+      #section-cakes #container-cards a .card{
+          
+          height: 400px;
+          width: 300px;
+          background-color: var(--card-color);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0, 0, 0.19);
+          border-radius: 10px;
+          padding: 10px; 
+      }
+      
+      #section-cakes #container-cards a .card h2{
+          position: relative;
+          bottom: 60px;
+          text-align: center;
+          display: none;
+          color: var();
+          
+      
+      }
+      #section-cakes #container-cards a .card:hover h2{
+          display: block;
+          
+    
+      }
+      
+      #section-cakes #container-cards a .card img{
+          width: 280px;
+          height: 380px;
+          object-fit: cover;
+          
+      }
+
+
+  }
+
+
+
+
+  @media screen and (min-width:600px)  and (max-width:1024px) {
+
+    .slider{
+    margin:0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+.slides input{
+    display: none;
+}
+
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    
+}
+
+
+.slide img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border:2px solid var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: var(--color-white); 
+}
+
+
+#radio1:checked ~.first{
+    margin-left: 0;
+    
+
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+    
+    
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+    
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+    
+    
+}
+
+
+.navigation-auto div{
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+   
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: var(--color-white);
+
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: var(--color-white);
+
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: var(--color-white);
+
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: var(--color-white);
+
+}main header p{
+    color: var(--paragraph-color);
+    text-align: justify;
+
+}
+
+main header{
+    margin: 20px 0;
+}
+
+main header h1{
+    text-align: center;
+}
+
+
+#section-cakes{
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask:linear-gradient(90deg,transparent,var(--color-white) 10%,var(--color-white) 90%,transparent) ;
+  }
+  #section-cakes #container-cards{
+      
+      display:flex;
+      flex-flow: row nowrap;
+      gap: 20px;
+      animation: scroll-card 20s linear infinite;
+  
+  }
+  @keyframes scroll-card{
+      to {
+          transform: translate(-100%)
+      }
+  }
+  
+  #section-cakes #container-cards a {
+    text-decoration: none;
+    
+  }
+  
+  #section-cakes #container-cards a .card{
+      
+      height: 400px;
+      width: 300px;
+      background-color: var(--card-color);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0, 0, 0.19);
+      border-radius: 10px;
+      padding: 10px; 
+  }
+  
+  #section-cakes #container-cards a .card h2{
+      position: relative;
+      bottom: 60px;
+      text-align: center;
+      display: none;
+      color: var();
+      
+  
+  }
+  #section-cakes #container-cards a .card:hover h2{
+      display: block;
+      
+
+  }
+  
+  #section-cakes #container-cards a .card img{
+      width: 280px;
+      height: 380px;
+      object-fit: cover;
+      
+  }
+
+    
+    
+    }
+  @media screen and (min-width:1024px) {
+
+    .slider{
+    margin:0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+.slides input{
+    display: none;
+}
+
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    
+}
+
+
+.slide img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border:2px solid var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: var(--color-white); 
+}
+
+
+#radio1:checked ~.first{
+    margin-left: 0;
+    
+
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+    
+    
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+    
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+    
+    
+}
+
+
+.navigation-auto div{
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+   
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: var(--color-white);
+
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: var(--color-white);
+
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: var(--color-white);
+
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: var(--color-white);
+
+}main header p{
+    color: var(--paragraph-color);
+    text-align: justify;
+
+}
+
+main header{
+    margin: 20px 0;
+}
+
+main header h1{
+    text-align: center;
+}
+
+
+#section-cakes{
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask:linear-gradient(90deg,transparent,var(--color-white) 10%,var(--color-white) 90%,transparent) ;
+  }
+  #section-cakes #container-cards{
+      
+      display:flex;
+      flex-flow: row nowrap;
+      gap: 20px;
+      animation: scroll-card 20s linear infinite;
+  
+  }
+  @keyframes scroll-card{
+      to {
+          transform: translate(-100%)
+      }
+  }
+  
+  #section-cakes #container-cards a {
+    text-decoration: none;
+    
+  }
+  
+  #section-cakes #container-cards a .card{
+      
+      height: 400px;
+      width: 300px;
+      background-color: var(--card-color);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0, 0, 0.19);
+      border-radius: 10px;
+      padding: 10px; 
+  }
+  
+  #section-cakes #container-cards a .card h2{
+      position: relative;
+      bottom: 60px;
+      text-align: center;
+      display: none;
+      color: var();
+      
+  
+  }
+  #section-cakes #container-cards a .card:hover h2{
+      display: block;
+      
+
+  }
+  
+  #section-cakes #container-cards a .card img{
+      width: 280px;
+      height: 380px;
+      object-fit: cover;
+      
+  }
+
+    
+    
+    }
